@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+if [ $# -ne 1 ]; then
+    echo "Usage: ${0} <MBOX>"
+    echo 'Open <MBOX> with Neomutt, or any Mutt compatible command.'
+    exit 1
+fi
+
+mbox="$1"
+
+"${MUTTCMD:-neomutt}" \
+    -e "set folder=./$(dirname "$0")" \
+    -e "set spoolfile=+${mbox}"

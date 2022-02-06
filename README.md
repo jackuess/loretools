@@ -18,4 +18,12 @@ Commands
 
 Fetch `<MESSAGE-ID>` and append it to `<MBOX>`.
 
+### loreopen
+
+    loreopen <MBOX>
+
+Open `<MBOX>` with Neomutt, or any Mutt compatible command.
+
+Set `MUTTCMD` to specify Mutt command (default: neomutt).
+
 [b4]: https://pypi.org/project/b4/

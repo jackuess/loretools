@@ -1,3 +1,3 @@
 .PHONY: test
 test:
-	shellcheck lorefetch
+	shellcheck lorefetch loreopen
